@@ -6,9 +6,9 @@ public class Matricula
 
 	private Pessoa professor;
 
-	private LocalDate dataInicio;
+	private DateTime dataInicio;
 
-	private LocalDate dataFim;
+	private DateTime dataFim;
 
 	private double valor;
 

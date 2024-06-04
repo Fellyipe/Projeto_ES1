@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+/*using Microsoft.EntityFrameworkCore;
 using OkrManager.Interfaces;
 
 using System;
@@ -17,7 +17,7 @@ namespace OkrManager.Repositories
         private ApplicationDbContext _dbContext = new ApplicationDbContext();
         private DbSet<T> _dbSet;
         
-        public Repository(/*ApplicationDbContext dbContext*/)
+        public Repository(/*ApplicationDbContext dbContext*//*)
         {
             //_dbContext = dbContext;
             _dbSet = _dbContext.Set<T>();
@@ -57,3 +57,4 @@ namespace OkrManager.Repositories
         
     }
 }
+*/

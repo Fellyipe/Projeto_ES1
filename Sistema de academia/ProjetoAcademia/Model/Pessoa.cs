@@ -6,7 +6,7 @@ public class Pessoa
 
 	private String cpf;
 
-	private LocalDate dataNascimento;
+	private DateOnly dataNascimento;
 
 	private String genero;
 
@@ -16,7 +16,7 @@ public class Pessoa
 
 	private Matricula matricula;
 
-	public void Pessoa(String nome, String cpf, LocalDate dataNascimento, String genero, String telefone, String email, String endereco, Matricula matricula)
+	public void Pe(String nome, String cpf, DateOnly dataNascimento, String genero, String telefone, String email, String endereco, Matricula matricula)
 	{
 
 	}

@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+/*using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using OkrManager.Models;
 using Task = System.Threading.Tasks.Task;
@@ -36,3 +36,4 @@ public class ApplicationDbContext : DbContext
     
 
 }
+*/
