@@ -1,0 +1,15 @@
+C:\Users\Felipe\Documents\UTFPR\5° Semestre\Engenharia de Software 1\Projeto Final\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\ProjetoAcademia.exe
+C:\Users\Felipe\Documents\UTFPR\5° Semestre\Engenharia de Software 1\Projeto Final\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\ProjetoAcademia.deps.json
+C:\Users\Felipe\Documents\UTFPR\5° Semestre\Engenharia de Software 1\Projeto Final\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\ProjetoAcademia.runtimeconfig.json
+C:\Users\Felipe\Documents\UTFPR\5° Semestre\Engenharia de Software 1\Projeto Final\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\ProjetoAcademia.dll
+C:\Users\Felipe\Documents\UTFPR\5° Semestre\Engenharia de Software 1\Projeto Final\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\ProjetoAcademia.pdb
+C:\Users\Felipe\Documents\UTFPR\5° Semestre\Engenharia de Software 1\Projeto Final\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ProjetoAcademia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Felipe\Documents\UTFPR\5° Semestre\Engenharia de Software 1\Projeto Final\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ProjetoAcademia.AssemblyInfoInputs.cache
+C:\Users\Felipe\Documents\UTFPR\5° Semestre\Engenharia de Software 1\Projeto Final\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ProjetoAcademia.AssemblyInfo.cs
+C:\Users\Felipe\Documents\UTFPR\5° Semestre\Engenharia de Software 1\Projeto Final\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ProjetoAcademia.csproj.CoreCompileInputs.cache
+C:\Users\Felipe\Documents\UTFPR\5° Semestre\Engenharia de Software 1\Projeto Final\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ProjetoAcademia.sourcelink.json
+C:\Users\Felipe\Documents\UTFPR\5° Semestre\Engenharia de Software 1\Projeto Final\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ProjetoAcademia.dll
+C:\Users\Felipe\Documents\UTFPR\5° Semestre\Engenharia de Software 1\Projeto Final\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\refint\ProjetoAcademia.dll
+C:\Users\Felipe\Documents\UTFPR\5° Semestre\Engenharia de Software 1\Projeto Final\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ProjetoAcademia.pdb
+C:\Users\Felipe\Documents\UTFPR\5° Semestre\Engenharia de Software 1\Projeto Final\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ProjetoAcademia.genruntimeconfig.cache
+C:\Users\Felipe\Documents\UTFPR\5° Semestre\Engenharia de Software 1\Projeto Final\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ref\ProjetoAcademia.dll
