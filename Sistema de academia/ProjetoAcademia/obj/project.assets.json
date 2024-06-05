@@ -2390,19 +2390,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Felipe\\.nuget\\packages\\": {}
+    "C:\\Users\\vitor\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Felipe\\Documents\\UTFPR\\5° Semestre\\Engenharia de Software 1\\Projeto Final\\Sistema de academia\\ProjetoAcademia\\ProjetoAcademia.csproj",
+      "projectUniqueName": "C:\\Users\\vitor\\Desktop\\EngSoftware\\Projeto_ES1\\Sistema de academia\\ProjetoAcademia\\ProjetoAcademia.csproj",
       "projectName": "ProjetoAcademia",
-      "projectPath": "C:\\Users\\Felipe\\Documents\\UTFPR\\5° Semestre\\Engenharia de Software 1\\Projeto Final\\Sistema de academia\\ProjetoAcademia\\ProjetoAcademia.csproj",
-      "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Felipe\\Documents\\UTFPR\\5° Semestre\\Engenharia de Software 1\\Projeto Final\\Sistema de academia\\ProjetoAcademia\\obj\\",
+      "projectPath": "C:\\Users\\vitor\\Desktop\\EngSoftware\\Projeto_ES1\\Sistema de academia\\ProjetoAcademia\\ProjetoAcademia.csproj",
+      "packagesPath": "C:\\Users\\vitor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vitor\\Desktop\\EngSoftware\\Projeto_ES1\\Sistema de academia\\ProjetoAcademia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\vitor\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2456,8 +2456,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\vitor\\Desktop\\EngSoftware\\Projeto_ES1\\Sistema de academia\\ProjetoAcademia\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
