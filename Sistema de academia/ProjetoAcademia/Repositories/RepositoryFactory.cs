@@ -1,8 +1,13 @@
 public class RepositoryFactory
 {
+    private static Repository repositoryInstance;
+
     public static Repository CreateRepository()
     {
-        var context = new ApplicationDbContext();
-        return new Repository(context);
+        if (repositoryInstance == null)
+        {
+            repositoryInstance = Repository.GetInstance();
+        }
+        return repositoryInstance;
     }
 }

@@ -24,9 +24,4 @@ public class ApplicationDbContext : DbContext
             .WithMany()
             .HasForeignKey(m => m.PersonalId);
     }
-
-    public DbSet<T> GetDbSet<T>() where T : class
-    {
-        return Set<T>();
-    }
 }

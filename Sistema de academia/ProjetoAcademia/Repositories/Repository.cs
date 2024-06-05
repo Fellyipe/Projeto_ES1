@@ -5,11 +5,29 @@ using Microsoft.EntityFrameworkCore;
 
 public class Repository
 {
+    private static Repository instance;
+    private static readonly object lockObject = new object();
+
     private readonly DbContext dbContext;
 
-    public Repository(DbContext dbContext)
+    private Repository(DbContext dbContext)
     {
         this.dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
+    }
+
+    public static Repository GetInstance()
+    {
+        if (instance == null)
+        {
+            lock (lockObject)
+            {
+                if (instance == null)
+                {
+                    instance = new Repository(new ApplicationDbContext());
+                }
+            }
+        }
+        return instance;
     }
 
     public IEnumerable<T> GetAll<T>() where T : class
