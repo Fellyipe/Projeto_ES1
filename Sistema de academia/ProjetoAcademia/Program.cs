@@ -7,18 +7,8 @@ namespace ProjetoAcademia
     {
         static void Main(string[] args)
         {
-            // Especifica a localização do banco de dados
-            string connectionString = "Data Source=academia.db;Version=3;";
+            var repository = RepositoryFactory.CreateRepository();
 
-            // Cria uma nova conexão com o banco de dados
-            using (var connection = new SQLiteConnection(connectionString))
-            {
-                connection.Open();
-
-                Console.WriteLine("Conexão com o banco de dados SQLite estabelecida com sucesso!");
-
-                connection.Close();
-            }
         }
     }
 }
