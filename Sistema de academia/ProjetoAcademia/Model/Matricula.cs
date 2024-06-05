@@ -2,9 +2,9 @@ public class Matricula
 {
 	private int idMatricula;
 
-	private Pessoa cliente;
+	private Cliente cliente;
 
-	private Pessoa professor;
+	private Personal personal;
 
 	private DateTime dataInicio;
 
