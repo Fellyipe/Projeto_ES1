@@ -1,37 +1,19 @@
 ﻿using System;
-using System.Data.SQLite;
 
 namespace ProjetoAcademia
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            var repository = RepositoryFactory.CreateRepository();
+      // Create repository instance (assuming RepositoryFactory creates it)
+      var repository = RepositoryFactory.CreateRepository();
 
-             while(true){
-                //Console.Clear(); 
-                Console.Write("[0] Fechar\n"+
-                              "[1] Matricular Aluno\n"+
-                              "[2] Atualizar Matricula\n"+
-                              "[3] Deletar Matricula\n"+
-                              "[4] Mostrar Matriculas");
-                string ?op = Console.ReadLine();
-                switch (op){
-                    case "0":
-                        Console.WriteLine("Programa Encerrado!");
-                        Environment.Exit(0);
-                        break;
-                    case "1":
-                    break;
-                    case "2":
-                    break;
-                    case "3":
-                    break;
-                    case "4":
-                    break;
-                } 
-            }
-        }
+      // Get the AcademiaManager singleton instance
+      var academiaManager = AcademiaManager.Instance;
+
+      // Start the application using the singleton instance
+      academiaManager.MenuPrincipal();
     }
+  }
 }

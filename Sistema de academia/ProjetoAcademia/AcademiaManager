@@ -1,0 +1,126 @@
+using System;
+
+namespace ProjetoAcademia
+{
+  class AcademiaManager
+  {
+    private static readonly Lazy<AcademiaManager> _instance = new Lazy<AcademiaManager>(() => new AcademiaManager());
+    private readonly MatriculaService _matriculaService;
+    private readonly PersonalService _personalService;
+
+    private AcademiaManager(MatriculaService matriculaService, PersonalService personalService)
+    {
+      _matriculaService = matriculaService;
+      _personalService = personalService;
+    }
+
+    public static AcademiaManager Instance => _instance.Value;
+
+    public void MenuPrincipal()
+    {
+      // Implement MenuPrincipal logic to display the main menu
+      while (true)
+      {
+        Console.WriteLine("[0] Fechar");
+        Console.WriteLine("[1] Gerenciar Matrículas");
+        Console.WriteLine("[2] Gerenciar Personal");
+        string opcao = Console.ReadLine();
+
+        switch (opcao)
+        {
+          case "0":
+            Console.WriteLine("Programa Encerrado!");
+            Environment.Exit(0);
+            break;
+          case "1":
+            GerenciarMatriculas();
+            break;
+          case "2":
+            GerenciarPersonal();
+            break;
+          default:
+            Console.WriteLine("Opção inválida. Tente novamente.");
+            break;
+        }
+      }
+    }
+
+    private void GerenciarMatriculas()
+    {
+      // Implement GerenciarMatriculas logic to handle matricula operations
+      while (true)
+      {
+        Console.WriteLine("[0] Voltar");
+        Console.WriteLine("[1] Matricular Aluno");
+        Console.WriteLine("[2] Atualizar Matrícula");
+        Console.WriteLine("[3] Cancelar Matrícula");
+        Console.WriteLine("[4] Listar Matrículas");
+        Console.WriteLine("[5] Buscar Matrícula");
+        string opcaoMatricula = Console.ReadLine();
+
+        switch (opcaoMatricula)
+        {
+          case "0":
+            return;
+          case "1":
+            // Call _matriculaService.CreateMatricula()
+            break;
+          case "2":
+            // Call _matriculaService.UpdateMatricula()
+            break;
+          case "3":
+            // Call _matriculaService.DeleteMatricula()
+            break;
+          case "4":
+            // Call _matriculaService.GetAllMatriculas()
+            break;
+          case "5":
+            // Call _matriculaService.SearchMatriculas()
+            break;
+          default:
+            Console.WriteLine("Opção inválida. Tente novamente.");
+            break;
+        }
+      }
+    }
+
+    private void GerenciarPersonal()
+    {
+      // Implement GerenciarPersonal logic to handle personal operations
+      while (true)
+      {
+        Console.WriteLine("[0] Voltar");
+        Console.WriteLine("[1] Cadastrar Personal");
+        Console.WriteLine("[2] Atualizar Personal");
+        Console.WriteLine("[3] Deletar Personal");
+        Console.WriteLine("[4] Listar Personal");
+        Console.WriteLine("[5] Buscar Personal");
+        string opcaoPersonal = Console.ReadLine();
+
+        switch (opcaoPersonal)
+        {
+          case "0":
+            return;
+          case "1":
+            // Call _personalService.CreatePersonal()
+            break;
+          case "2":
+            // Call _personalService.UpdatePersonal()
+            break;
+          case "3":
+            // Call _personalService.DeletePersonal()
+            break;
+          case "4":
+            // Call _personalService.GetAllPersonals()
+            break;
+          case "5":
+            // Call _personalService.SearchPersonals()
+            break;
+          default:
+            Console.WriteLine("Opção inválida. Tente novamente.");
+            break;
+        }
+      }
+    }
+  }
+}
