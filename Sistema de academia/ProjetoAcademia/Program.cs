@@ -7,10 +7,13 @@ namespace ProjetoAcademia
     private MatriculaService _matriculaService; // Matricula service
     private PersonalService _personalService; // Personal service
 
-    public Program(MatriculaService matriculaService, PersonalService personalService)
+    private ClienteService _clienteService;
+
+    public Program(MatriculaService matriculaService, PersonalService personalService, ClienteService clienteService)
     {
       _matriculaService = matriculaService;
       _personalService = personalService;
+      _clienteService = clienteService;
     }
 
     static void Main(string[] args)
@@ -24,7 +27,7 @@ namespace ProjetoAcademia
       var personalService = new PersonalService(repository);
 
       // Create and start the program instance
-      var program = new Program(matriculaService, personalService);
+      var program = new Program(matriculaService, personalService, clienteService);
       program.MenuPrincipal();
     }
 
@@ -100,7 +103,7 @@ namespace ProjetoAcademia
       // Get student (cliente) information
       Console.WriteLine("CPF do Cliente: ");
       string cpf = Console.ReadLine();
-      var cliente = MatriculaService.clienteService.GetClienteByCpf(cpf);
+      var cliente = _clienteService.GetClienteByCpf(cpf);
 
       if (cliente == null)
       {
@@ -140,6 +143,12 @@ namespace ProjetoAcademia
       // Get payment method information (assuming an interface for payment)
       IMetodoDePagamento metodoPagamento;
       // ... (Implement logic to get the payment method object)
+      Console.WriteLine("Selecione o método de pagamento:");
+      Console.WriteLine("[1] Cartão de Crédito");
+      Console.WriteLine("[2] Dinheiro");
+      Console.WriteLine("[3] PIX");
+      string opcaoPagamento = Console.ReadLine();
+
 
       // Create a Matricula object
       var matricula = new Matricula
