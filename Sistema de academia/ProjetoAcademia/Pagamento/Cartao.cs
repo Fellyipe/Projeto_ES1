@@ -1,5 +1,3 @@
-using System.Configuration;
-
 class Cartao : IMetodoDePagamento
 {
     public void RealizarPagamento(double valor)

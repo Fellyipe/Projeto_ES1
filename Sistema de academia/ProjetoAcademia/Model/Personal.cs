@@ -1,4 +1,4 @@
-class Personal
+public class Personal
 {
     public string Nome { get; set; }
     public DateTime DataNascimento { get; set; }
