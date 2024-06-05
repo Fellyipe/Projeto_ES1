@@ -1,60 +1,40 @@
-/*using Microsoft.EntityFrameworkCore;
-using OkrManager.Interfaces;
-
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using OKRManager.Data;
 
-
-namespace OkrManager.Repositories
+namespace ProjetoAcademia
 {
-
-    public class Repository<T> : IRepository<T> where T : class
+    public class Repository
     {
-        //private readonly ApplicationDbContext _dbContext;
-        private ApplicationDbContext _dbContext = new ApplicationDbContext();
-        private DbSet<T> _dbSet;
-        
-        public Repository(/*ApplicationDbContext dbContext*//*)
+        private readonly string connectionString;
+
+        public Repository(string connectionString)
         {
-            //_dbContext = dbContext;
-            _dbSet = _dbContext.Set<T>();
-        }
-        public void Create(T entidade)
-        {
-            _dbSet.Add(entidade);
-            _dbContext.SaveChanges();
+            this.connectionString = connectionString;
         }
 
-        public void Update(T entidade)
+        public void Create<T>(T entity) where T : class
         {
-            _dbSet.Update(entidade);
-            _dbContext.SaveChanges();
+            // Implementação do método Create
         }
 
-        public void Delete(int id)
+        public T Read<T>(int id) where T : class
         {
-            T? entidade = GetById(id);
-            if (entidade != null)
-            {
-                _dbSet.Remove(entidade);
-                _dbContext.SaveChanges();
-            }
+            // Implementação do método Read
         }
 
-        public T? GetById(int id)
+        public void Update<T>(T entity) where T : class
         {
-            return _dbSet.Find(id);
+            // Implementação do método Update
         }
-        
-        
-        public List<T> GetAll()
+
+        public void Delete<T>(int id) where T : class
         {
-            return _dbSet.ToList();
+            // Implementação do método Delete
         }
-        
+
+        public IEnumerable<T> ListAll<T>() where T : class
+        {
+            // Implementação do método ListAll
+        }
     }
 }
-*/
