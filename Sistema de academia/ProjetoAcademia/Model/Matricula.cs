@@ -16,6 +16,8 @@ public class Matricula
 	{
 
 	}
-
+	public int IdMatricula { get { return idMatricula; } }
+	public int ClienteId { get { return cliente.Id; } }
+  public int PersonalId { get { return personal.Id; } }
 }
 
