@@ -50,7 +50,7 @@ public class MatriculaService
 
         if (matricula.IdMatricula <= 0)
         {
-            throw new ArgumentOutOfRangeException(nameof(matricula.Id), "ID da matrícula deve ser maior que zero.");
+            throw new ArgumentOutOfRangeException(nameof(matricula.IdMatricula), "ID da matrícula deve ser maior que zero.");
         }
 
         if (matricula.ClienteId <= 0)
@@ -121,6 +121,7 @@ public class MatriculaService
         return matriculas.Where(m =>
             m.Cliente.Nome.Contains(filtro, StringComparison.InvariantCultureIgnoreCase) ||
             m.Personal.Nome.Contains(filtro, StringComparison.InvariantCultureIgnoreCase) ||
-            m.DataMatricula.ToString("dd/MM/yyyy").Contains(filtro, StringComparison.InvariantCultureIgnoreCase));
+            m.DataInicio.ToString("dd/MM/yyyy").Contains(filtro, StringComparison.InvariantCultureIgnoreCase) ||
+            m.DataFim.ToString("dd/MM/yyyy").Contains(filtro, StringComparison.InvariantCultureIgnoreCase));
     }
 }
