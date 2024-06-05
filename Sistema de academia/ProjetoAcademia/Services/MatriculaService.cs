@@ -1,127 +1,80 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-
 public class MatriculaService
 {
-    private readonly IRepository<Matricula> _matriculaRepository;
-    private readonly IRepository<Cliente> _clienteRepository;
-    private readonly IRepository<Personal> _personalRepository;
+    private readonly Repository _repository;
+    private readonly ClienteService _clienteService;
 
-    public MatriculaService(
-        IRepository<Matricula> matriculaRepository,
-        IRepository<Cliente> clienteRepository,
-        IRepository<Personal> personalRepository)
+    public MatriculaService(Repository repository, ClienteService clienteService)
     {
-        _matriculaRepository = matriculaRepository;
-        _clienteRepository = clienteRepository;
-        _personalRepository = personalRepository;
+        _repository = repository;
+        _clienteService = clienteService;
+    }
+
+    public void CriarMatricula(Matricula matricula, Cliente cliente, IMetodoDePagamento metodoDePagamento)
+    {
+        // Verificar se o cliente já existe pelo CPF
+        var clienteExistente = _clienteService.GetClienteByCpf(cliente.CPF);
+        if (clienteExistente == null)
+        {
+            // Criar novo cliente
+            _clienteService.CreateCliente(cliente);
+            clienteExistente = cliente; // Novo cliente criado
+        }
+
+        // Associar o cliente existente à matrícula
+        matricula.ClienteId = clienteExistente.Id;
+        matricula.Cliente = clienteExistente;
+
+        // Realizar o pagamento
+        metodoDePagamento.RealizarPagamento(matricula.ValorMensal);
+
+        // Criar a matrícula
+        CreateMatricula(matricula);
+    }
+
+    public void RenovarMatricula(int matriculaId, DateTime novaDataFim, double valor, IMetodoDePagamento metodoDePagamento)
+    {
+        var matricula = _repository.GetById<Matricula>(matriculaId);
+        if (matricula == null)
+        {
+            throw new Exception("Matrícula não encontrada.");
+        }
+
+        // Atualizar a data de fim da matrícula
+        matricula.DataFim = novaDataFim;
+
+        // Realizar o pagamento
+        metodoDePagamento.RealizarPagamento(valor);
+        UpdateMatricula(matricula);
     }
 
     public void CreateMatricula(Matricula matricula)
     {
-        if (matricula == null)
-        {
-            throw new ArgumentNullException(nameof(matricula));
-        }
-
-        if (matricula.ClienteId <= 0)
-        {
-            throw new ArgumentOutOfRangeException(nameof(matricula.ClienteId), "ID do cliente deve ser maior que zero.");
-        }
-
-        if (matricula.PersonalId <= 0)
-        {
-            throw new ArgumentOutOfRangeException(nameof(matricula.PersonalId), "ID do personal deve ser maior que zero.");
-        }
-
-        // Validações adicionais...
-
-        _matriculaRepository.Create(matricula);
-    }
-
-    public void UpdateMatricula(Matricula matricula)
-    {
-        if (matricula == null)
-        {
-            throw new ArgumentNullException(nameof(matricula));
-        }
-
-        if (matricula.IdMatricula <= 0)
-        {
-            throw new ArgumentOutOfRangeException(nameof(matricula.IdMatricula), "ID da matrícula deve ser maior que zero.");
-        }
-
-        if (matricula.ClienteId <= 0)
-        {
-            throw new ArgumentOutOfRangeException(nameof(matricula.ClienteId), "ID do cliente deve ser maior que zero.");
-        }
-
-        if (matricula.PersonalId <= 0)
-        {
-            throw new ArgumentOutOfRangeException(nameof(matricula.PersonalId), "ID do personal deve ser maior que zero.");
-        }
-
-        // Validações adicionais...
-
-        _matriculaRepository.Update(matricula);
-    }
-
-    public void DeleteMatricula(int id)
-    {
-        if (id <= 0)
-        {
-            throw new ArgumentOutOfRangeException(nameof(id), "ID da matrícula deve ser maior que zero.");
-        }
-
-        _matriculaRepository.Delete(id);
+        _repository.Create(matricula);
     }
 
     public Matricula GetMatriculaById(int id)
     {
-        if (id <= 0)
-        {
-            throw new ArgumentOutOfRangeException(nameof(id), "ID da matrícula deve ser maior que zero.");
-        }
+        return _repository.GetById<Matricula>(id);
+    }
 
-        var matricula = _matriculaRepository.GetById(id);
+    public void UpdateMatricula(Matricula matricula)
+    {
+        _repository.Update(matricula);
+    }
 
-        if (matricula != null)
-        {
-            matricula.Cliente = _clienteRepository.GetById(matricula.ClienteId);
-            matricula.Personal = _personalRepository.GetById(matricula.PersonalId);
-        }
-
-        return matricula;
+    public void DeleteMatricula(int id)
+    {
+        _repository.Delete<Matricula>(id);
     }
 
     public IEnumerable<Matricula> GetAllMatriculas()
     {
-        var matriculas = _matriculaRepository.GetAll();
-
-        foreach (var matricula in matriculas)
-        {
-            matricula.Cliente = _clienteRepository.GetById(matricula.ClienteId);
-            matricula.Personal = _personalRepository.GetById(matricula.PersonalId);
-        }
-
-        return matriculas;
+        return _repository.GetAll<Matricula>();
     }
 
-    public IEnumerable<Matricula> SearchMatriculas(string filtro)
-    {
-        if (string.IsNullOrEmpty(filtro))
-        {
-            throw new ArgumentNullException(nameof(filtro));
-        }
+    public IEnumerable<Matricula> GetMatriculasByClienteId(int clienteId)
+{
+    return _repository.GetAll<Matricula>().Where(m => m.ClienteId == clienteId);
+}
 
-        var matriculas = _matriculaRepository.GetAll();
-
-        return matriculas.Where(m =>
-            m.Cliente.Nome.Contains(filtro, StringComparison.InvariantCultureIgnoreCase) ||
-            m.Personal.Nome.Contains(filtro, StringComparison.InvariantCultureIgnoreCase) ||
-            m.DataInicio.ToString("dd/MM/yyyy").Contains(filtro, StringComparison.InvariantCultureIgnoreCase) ||
-            m.DataFim.ToString("dd/MM/yyyy").Contains(filtro, StringComparison.InvariantCultureIgnoreCase));
-    }
 }

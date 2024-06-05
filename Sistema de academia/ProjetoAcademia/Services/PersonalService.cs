@@ -1,74 +1,34 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-
 public class PersonalService
 {
-    private readonly IRepository<Personal> _personalRepository;
+    private readonly Repository _repository;
 
-    public PersonalService(IRepository<Personal> personalRepository)
+    public PersonalService(Repository repository)
     {
-        _personalRepository = personalRepository;
+        _repository = repository;
     }
 
     public void CreatePersonal(Personal personal)
     {
-        if (personal == null)
-        {
-            throw new ArgumentNullException(nameof(personal));
-        }
-
-        _personalRepository.Create(personal);
-    }
-
-    public void UpdatePersonal(Personal personal)
-    {
-        if (personal == null)
-        {
-            throw new ArgumentNullException(nameof(personal));
-        }
-
-        _personalRepository.Update(personal);
-    }
-
-    public void DeletePersonal(int id)
-    {
-        if (id <= 0)
-        {
-            throw new ArgumentOutOfRangeException(nameof(id), "ID do personal deve ser maior que zero.");
-        }
-
-        _personalRepository.Delete(id);
+        _repository.Create(personal);
     }
 
     public Personal GetPersonalById(int id)
     {
-        if (id <= 0)
-        {
-            throw new ArgumentOutOfRangeException(nameof(id), "ID do personal deve ser maior que zero.");
-        }
+        return _repository.GetById<Personal>(id);
+    }
 
-        return _personalRepository.GetById(id);
+    public void UpdatePersonal(Personal personal)
+    {
+        _repository.Update(personal);
+    }
+
+    public void DeletePersonal(int id)
+    {
+        _repository.Delete<Personal>(id);
     }
 
     public IEnumerable<Personal> GetAllPersonals()
     {
-        return _personalRepository.GetAll();
-    }
-
-    public IEnumerable<Personal> SearchPersonals(string filtro)
-    {
-        if (string.IsNullOrEmpty(filtro))
-        {
-            throw new ArgumentNullException(nameof(filtro));
-        }
-
-        var personals = _personalRepository.GetAll();
-
-        return personals.Where(p =>
-            p.Nome.Contains(filtro, StringComparison.InvariantCultureIgnoreCase) ||
-            p.CPF.Contains(filtro, StringComparison.InvariantCultureIgnoreCase) ||
-            p.Email.Contains(filtro, StringComparison.InvariantCultureIgnoreCase));
+        return _repository.GetAll<Personal>();
     }
 }

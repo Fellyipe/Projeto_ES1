@@ -1,29 +1,20 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 public class Matricula
 {
-	private int idMatricula;
+	public int IdMatricula { get; set; }
+    public DateTime DataInicio { get; set; }
+    public DateTime DataFim { get; set; }
+    public double ValorMensal { get; set; }
 
-	private Cliente cliente;
+    [NotMapped]
+    public Cliente Cliente { get; set; }
+    
+    [NotMapped]
+    public Personal Personal { get; set; }
 
-	private Personal personal;
-
-	private DateTime dataInicio;
-
-	private DateTime dataFim;
-
-	private double valor;
-
-	public void realizarMatricula()
-	{
-
-	}
-	public int IdMatricula { get { return idMatricula; } }
-	public int ClienteId { get { return cliente.Id; } }
-  public int PersonalId { get { return personal.Id; } }
-
-	public Cliente Cliente { get { return cliente; } set { cliente = value; } }
-  public Personal Personal { get { return personal; } set { personal = value; } }
-	public DateTime DataInicio { get { return dataInicio; } set { dataInicio = value; } }
-  public DateTime DataFim { get { return dataFim; } set { dataFim = value; } }
+    public int ClienteId { get; set; }
+    public int PersonalId { get; set; }
 }
 
 

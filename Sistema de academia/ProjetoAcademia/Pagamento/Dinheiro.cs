@@ -1,4 +1,4 @@
-class Dinheiro : IMetodoDePagamento
+public class Dinheiro : IMetodoDePagamento
 {
     public void RealizarPagamento(double valor)
     {
