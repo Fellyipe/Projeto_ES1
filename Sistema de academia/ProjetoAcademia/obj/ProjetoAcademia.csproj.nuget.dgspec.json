@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vitor\\Desktop\\EngSoftware\\Projeto_ES1\\Sistema de academia\\ProjetoAcademia\\ProjetoAcademia.csproj": {}
+    "C:\\Users\\Felipe\\Documents\\UTFPR\\5° Semestre\\Engenharia de Software 1\\Projeto Final\\Sistema de academia\\ProjetoAcademia\\ProjetoAcademia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vitor\\Desktop\\EngSoftware\\Projeto_ES1\\Sistema de academia\\ProjetoAcademia\\ProjetoAcademia.csproj": {
+    "C:\\Users\\Felipe\\Documents\\UTFPR\\5° Semestre\\Engenharia de Software 1\\Projeto Final\\Sistema de academia\\ProjetoAcademia\\ProjetoAcademia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vitor\\Desktop\\EngSoftware\\Projeto_ES1\\Sistema de academia\\ProjetoAcademia\\ProjetoAcademia.csproj",
+        "projectUniqueName": "C:\\Users\\Felipe\\Documents\\UTFPR\\5° Semestre\\Engenharia de Software 1\\Projeto Final\\Sistema de academia\\ProjetoAcademia\\ProjetoAcademia.csproj",
         "projectName": "ProjetoAcademia",
-        "projectPath": "C:\\Users\\vitor\\Desktop\\EngSoftware\\Projeto_ES1\\Sistema de academia\\ProjetoAcademia\\ProjetoAcademia.csproj",
-        "packagesPath": "C:\\Users\\vitor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vitor\\Desktop\\EngSoftware\\Projeto_ES1\\Sistema de academia\\ProjetoAcademia\\obj\\",
+        "projectPath": "C:\\Users\\Felipe\\Documents\\UTFPR\\5° Semestre\\Engenharia de Software 1\\Projeto Final\\Sistema de academia\\ProjetoAcademia\\ProjetoAcademia.csproj",
+        "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Felipe\\Documents\\UTFPR\\5° Semestre\\Engenharia de Software 1\\Projeto Final\\Sistema de academia\\ProjetoAcademia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vitor\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

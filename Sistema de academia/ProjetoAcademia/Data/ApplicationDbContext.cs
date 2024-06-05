@@ -12,6 +12,19 @@ public class ApplicationDbContext : DbContext
         optionsBuilder.UseSqlite("Data Source=academia.db");
     }
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Matricula>()
+            .HasOne(m => m.Cliente)
+            .WithMany()
+            .HasForeignKey(m => m.ClienteId);
+
+        modelBuilder.Entity<Matricula>()
+            .HasOne(m => m.Personal)
+            .WithMany()
+            .HasForeignKey(m => m.PersonalId);
+    }
+
     public DbSet<T> GetDbSet<T>() where T : class
     {
         return Set<T>();

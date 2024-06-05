@@ -1,4 +1,4 @@
-class PIX : IMetodoDePagamento
+public class PIX : IMetodoDePagamento
 {
     public void RealizarPagamento(double valor)
     {

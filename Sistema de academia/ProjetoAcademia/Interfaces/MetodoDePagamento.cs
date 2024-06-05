@@ -1,5 +1,5 @@
 
-	interface IMetodoDePagamento
+public interface IMetodoDePagamento
 {
     void RealizarPagamento(double valor);
 }
