@@ -41,3 +41,46 @@ C:\Users\Felipe\Documents\UTFPR\5° Semestre\Engenharia de Software 1\Projeto Fi
 C:\Users\Felipe\Documents\UTFPR\5° Semestre\Engenharia de Software 1\Projeto Final\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Felipe\Documents\UTFPR\5° Semestre\Engenharia de Software 1\Projeto Final\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\Felipe\Documents\UTFPR\5° Semestre\Engenharia de Software 1\Projeto Final\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ProjetoA.B909FC18.Up2Date
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\ProjetoAcademia.exe
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\ProjetoAcademia.deps.json
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\ProjetoAcademia.runtimeconfig.json
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\ProjetoAcademia.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\ProjetoAcademia.pdb
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\EntityFramework.SqlServer.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\EntityFramework.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\System.Data.SQLite.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\System.Data.SQLite.EF6.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ProjetoAcademia.csproj.AssemblyReference.cache
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ProjetoAcademia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ProjetoAcademia.AssemblyInfoInputs.cache
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ProjetoAcademia.AssemblyInfo.cs
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ProjetoAcademia.csproj.CoreCompileInputs.cache
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ProjetoAcademia.sourcelink.json
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ProjetoA.B909FC18.Up2Date
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ProjetoAcademia.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\refint\ProjetoAcademia.dll
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ProjetoAcademia.pdb
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ProjetoAcademia.genruntimeconfig.cache
+C:\Users\vitor\Desktop\EngSoftware\Projeto_ES1\Sistema de academia\ProjetoAcademia\obj\Debug\net8.0\ref\ProjetoAcademia.dll
